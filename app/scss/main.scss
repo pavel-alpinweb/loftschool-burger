@@ -1,4 +1,4 @@
-// @import "_typography";
+@import "_fonts";
 @import "_vars";
 @import "_base";
 
@@ -8,4 +8,11 @@ body,html{
 	background-color: white;
 	color: #000;
 	font-family: $mainFont;
+}
+
+.container{
+	width: 100%;
+	max-width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
 }
