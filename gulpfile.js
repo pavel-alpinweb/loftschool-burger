@@ -15,6 +15,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 gulp.task('sass', function(){
 	return gulp.src('app/scss/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
+	// .pipe(cssnano()) // Сжимаем
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
 	.pipe(gulp.dest('app/css'))
@@ -28,8 +29,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 		},
 		notify: false, // Отключаем уведомления
 		open: false,
-		tunnel: true,
-		tunnel: "mysite" //Demonstration page: http://mysite.localtunnel.me
+		// tunnel: true,
+		// tunnel: "mysite" //Demonstration page: http://mysite.localtunnel.me
 	});
 });
 

@@ -1,6 +1,7 @@
-// @import "_typography";
+@import "_fonts";
 @import "_vars";
 @import "_base";
+@import "_about";
 
 body,html{
 	height: 100%;
@@ -8,4 +9,19 @@ body,html{
 	background-color: white;
 	color: #000;
 	font-family: $mainFont;
+}
+
+.container{
+	width: 100%;
+	max-width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+h2{
+	text-align: center;
+	color: #2f3234;
+	font-family: $mainTitleFont;
+	font-size: 72px;
+	font-weight: 400;
 }

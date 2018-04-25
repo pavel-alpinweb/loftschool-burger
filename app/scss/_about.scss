@@ -1,0 +1,40 @@
+.about{
+	height: 100vh;
+	min-height: 650px;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	background:transparent url('../img/about-bg.jpg') left top no-repeat;
+	background-size: 100%;
+	.container{
+		display: flex;
+		justify-content:space-between;
+	}
+	&__text{
+		max-width: 280px;
+		opacity: 0.8;
+		color: #2f3234;
+		font-family: $mainFont;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 24.07px;
+		text-align: center;
+	}
+	&__item{
+		text-align: center;
+	}
+	&__ic img{
+		margin: 0 auto;
+	}
+	&__subtitle{
+		color: #2f3234;
+		font-family: $subTitleFont;
+		font-size: 24px;
+		font-weight: 500;
+		margin-bottom: 20px;
+		// Text style for "Ручная  сб"
+		letter-spacing: -0.6px;
+		text-align: center;
+		line-height: 28.14px;
+	}
+}
