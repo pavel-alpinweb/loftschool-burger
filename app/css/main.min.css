@@ -394,7 +394,8 @@ img {
   .about__item {
     text-align: center; }
   .about__ic img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: #000; }
   .about__subtitle {
     color: #2f3234;
     font-family: "Conv_Lifehack Medium";
@@ -404,6 +405,86 @@ img {
     letter-spacing: -0.6px;
     text-align: center;
     line-height: 28.14px; }
+
+.recalls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .recalls__item {
+    width: 25%;
+    position: relative;
+    cursor: pointer; }
+    .recalls__item img {
+      width: 100%;
+      height: auto;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+    .recalls__item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(20, 20, 20, 0.7);
+      padding: 0px 30px 0px 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      opacity: 0;
+      -webkit-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s; }
+      .recalls__item .overlay__title {
+        color: #ffffff;
+        font-family: "Conv_Gagalin-Regular";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 0.5em;
+        margin-bottom: 20px; }
+      .recalls__item .overlay__content {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 15px; }
+      .recalls__item .overlay__link {
+        display: inline-block;
+        height: 35px;
+        background-color: #2f3234;
+        line-height: 35px;
+        padding: 0 15px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s; }
+        .recalls__item .overlay__link:hover {
+          background-color: #1f2122; }
+    .recalls__item:hover .overlay {
+      opacity: 1; }
 
 body, html {
   height: 100%;

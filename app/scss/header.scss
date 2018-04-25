@@ -83,7 +83,11 @@
 		background-color: #e45028;
 		line-height: 35px;
 		padding: 0 15px;
-		border-radius: 5px
+		border-radius: 5px;
+		transition: all .4s;
+		&:hover{
+			background-color: #c1401e;
+		}
 	}
 }
 

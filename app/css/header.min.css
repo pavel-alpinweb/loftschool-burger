@@ -451,7 +451,12 @@ img {
     line-height: 35px;
     padding: 0 15px;
     -webkit-border-radius: 5px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s; }
+    .nav__action:hover {
+      background-color: #c1401e; }
 
 .scroll-down {
   position: absolute;
