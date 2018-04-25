@@ -354,6 +354,57 @@ img {
 .text-center {
   text-align: center; }
 
+.about {
+  height: 100vh;
+  min-height: 650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: transparent url("../img/about-bg.jpg") left top no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%; }
+  .about .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .about__text {
+    max-width: 280px;
+    opacity: 0.8;
+    color: #2f3234;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.07px;
+    text-align: center; }
+  .about__item {
+    text-align: center; }
+  .about__ic img {
+    margin: 0 auto; }
+  .about__subtitle {
+    color: #2f3234;
+    font-family: "Conv_Lifehack Medium";
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: -0.6px;
+    text-align: center;
+    line-height: 28.14px; }
+
 body, html {
   height: 100%;
   padding: 0;
@@ -366,3 +417,10 @@ body, html {
   max-width: 960px;
   padding: 0 10px;
   margin: 0 auto; }
+
+h2 {
+  text-align: center;
+  color: #2f3234;
+  font-family: "Conv_Gagalin-Regular";
+  font-size: 72px;
+  font-weight: 400; }
