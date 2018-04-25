@@ -15,6 +15,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 gulp.task('sass', function(){
 	return gulp.src('app/scss/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
+	.pipe(cssnano()) // Сжимаем
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
 	.pipe(gulp.dest('app/css'))
