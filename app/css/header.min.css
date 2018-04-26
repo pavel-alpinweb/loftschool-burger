@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -401,7 +402,9 @@ img {
     font-family: "Conv_Gagalin-Regular";
     font-size: 72px;
     font-weight: 400;
-    line-height: 85px;
+    line-height: 0.7em;
+    margin-bottom: 40px;
+    margin-top: 90px;
     text-transform: uppercase; }
   .page-header__subtitle {
     color: #ffffff;
@@ -431,10 +434,19 @@ img {
     align-items: center; }
   .nav__item {
     list-style: none;
-    margin-right: 15px;
     font-size: 13px;
     font-weight: 500px;
     text-transform: uppercase; }
+    .nav__item::after {
+      content: '•';
+      margin: 0 15px;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: uppercase; }
+    .nav__item:last-of-type:after {
+      display: none; }
     .nav__item a {
       text-decoration: none;
       color: #ffffff; }
@@ -454,7 +466,8 @@ img {
     border-radius: 5px;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
-    transition: all .4s; }
+    transition: all .4s;
+    margin-left: 15px; }
     .nav__action:hover {
       background-color: #c1401e; }
 
