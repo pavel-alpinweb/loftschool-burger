@@ -371,8 +371,8 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   background: transparent url("../img/about-bg.jpg") left top no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100%; }
+  -webkit-background-size: cover;
+  background-size: cover; }
   .about .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -383,7 +383,7 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .about__text {
-    max-width: 280px;
+    max-width: 286px;
     opacity: 0.8;
     color: #2f3234;
     font-family: "Ubuntu", sans-serif;
@@ -394,14 +394,14 @@ img {
   .about__item {
     text-align: center; }
   .about__ic img {
-    margin: 0 auto;
+    margin: 0 auto 35px;
     color: #000; }
   .about__subtitle {
     color: #2f3234;
     font-family: "Conv_Lifehack Medium";
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin: 0 0 13px;
     letter-spacing: -0.6px;
     text-align: center;
     line-height: 28.14px; }
@@ -505,4 +505,4 @@ h2 {
   font-family: "Conv_Gagalin-Regular";
   font-size: 72px;
   font-weight: 400;
-  margin: 0 0 55px; }
+  margin: 0 0 30px; }

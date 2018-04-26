@@ -5,13 +5,13 @@
 	flex-direction:column;
 	justify-content:center;
 	background:transparent url('../img/about-bg.jpg') left top no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	.container{
 		display: flex;
 		justify-content:space-between;
 	}
 	&__text{
-		max-width: 280px;
+		max-width: 286px;
 		opacity: 0.8;
 		color: #2f3234;
 		font-family: $mainFont;
@@ -24,7 +24,7 @@
 		text-align: center;
 	}
 	&__ic img{
-		margin: 0 auto;
+		margin: 0 auto 35px;
 		color: #000;
 	}
 	&__subtitle{
@@ -32,8 +32,7 @@
 		font-family: $subTitleFont;
 		font-size: 24px;
 		font-weight: 500;
-		margin-bottom: 20px;
-		// Text style for "Ручная  сб"
+		margin: 0 0 13px;
 		letter-spacing: -0.6px;
 		text-align: center;
 		line-height: 28.14px;
