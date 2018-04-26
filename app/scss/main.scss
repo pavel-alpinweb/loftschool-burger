@@ -25,5 +25,38 @@ h2{
 	font-family: $mainTitleFont;
 	font-size: 72px;
 	font-weight: 400;
-	margin: 0 0 30px;
+	margin: 0 0 30px; 
+}
+
+.live-scroll{
+	position: fixed;
+	top:90px;
+	right: 50px;
+	display: flex;
+	flex-direction: column;
+	&__item{
+		width: 16px;
+		height: 16px;
+		background-color: transparent;
+		border-radius: 16px;
+		padding: 5px;
+		line-height: 0;
+		margin-bottom: 5px;
+		position: relative;
+		&.active{border: 1px solid rgb(255, 255, 255);}
+		&:after{
+			content: '';
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 6px;
+			background-color: #ffffff;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			line-height: 0;
+			margin-left: -2.5px;
+			margin-top: -2.5px;
+		}
+	}
 }
