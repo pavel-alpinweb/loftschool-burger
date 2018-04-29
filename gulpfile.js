@@ -28,7 +28,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 			baseDir: 'app' // Директория для сервера - app
 		},
 		notify: false, // Отключаем уведомления
-		open: false,
+		open: true,
 		// tunnel: true,
 		// tunnel: "mysite" //Demonstration page: http://mysite.localtunnel.me
 	});
