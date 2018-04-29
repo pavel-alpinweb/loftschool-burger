@@ -28,7 +28,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 			baseDir: 'app' // Директория для сервера - app
 		},
 		notify: false, // Отключаем уведомления
-		open: false,
+		open: true,
 		// tunnel: true,
 		// tunnel: "mysite" //Demonstration page: http://mysite.localtunnel.me
 	});
@@ -87,8 +87,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.min.css',
-		'app/css/libs.min.css',
-		'app/css/header.min.css'
+		'app/css/libs.min.css'
 		])
 	.pipe(gulp.dest('build/css'))
 

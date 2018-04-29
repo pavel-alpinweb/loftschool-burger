@@ -1,15 +1,16 @@
-@import "_fonts";
-@import "_vars";
-@import "_base";
-@import "_about";
-@import "_recalls";
+@import "setings/_mixins";
+@import "setings/_fonts";
+@import "setings/_vars";
+@import "setings/_base";
+@import "sections/_about";
+@import "sections/_recalls";
 
 body,html{
 	height: 100%;
 	padding: 0;
 	background-color: white;
 	color: #000;
-	font-family: $mainFont;
+	font-family: $mainFont, sans-serif;
 }
 
 .container{
@@ -19,7 +20,7 @@ body,html{
 	margin: 0 auto;
 }
 
-h2{
+.section-title{
 	text-align: center;
 	color: #2f3234;
 	font-family: $mainTitleFont;
@@ -43,6 +44,7 @@ h2{
 		line-height: 0;
 		margin-bottom: 5px;
 		position: relative;
+		list-style: none;
 		&.active{border: 1px solid rgb(255, 255, 255);}
 		&:after{
 			content: '';
@@ -55,8 +57,7 @@ h2{
 			top:50%;
 			left: 50%;
 			line-height: 0;
-			margin-left: -2.5px;
-			margin-top: -2.5px;
+			transform: translate(-50%, -50%);
 		}
 	}
 }
