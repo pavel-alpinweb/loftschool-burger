@@ -1,0 +1,49 @@
+.comand{
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comand__content{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(47, 50, 52,0.93);
+    padding-left: 100px;
+    padding-top: 113px;
+}
+
+.worker{
+    margin-bottom: 40px;
+}
+
+.worker__name{
+    color: rgb(255, 255, 255);
+    font-family: $mainTitleFont;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.75em;
+    margin: 0 0 17px;
+}
+
+.worker__info{
+    display: flex;
+    align-items: center;
+}
+
+.worker__desc{
+    max-width: 208px;
+    color: rgb(255, 255, 255);
+    font-family: $mainFont;
+    font-size: 0.875rem;
+    margin-left: 20px;
+    h4{
+        line-height: 0.75em;
+        margin: 0 0 23px;
+        font-weight: 700;
+    }
+    p{
+        margin: 0;
+        font-weight: 300;
+    }
+}

@@ -28,6 +28,11 @@ body,html{
 	font-size: 72px;
 	font-weight: 400;
 	margin: 0 0 30px; 
+	&--comand{
+		color: rgb(249, 180, 59);
+		margin: 0;
+		text-align: left;
+	}
 }
 
 .live-scroll{
