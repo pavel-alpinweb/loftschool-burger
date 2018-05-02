@@ -61,7 +61,7 @@
 }
 
 .nav{
-	display: flex;
+	display: flex; 
 	align-items:center; 
 	&__menu{
 		display: flex;
@@ -70,7 +70,7 @@
 	&__item{
 		list-style: none;
 		font-size: 13px;
-		font-weight: 500px;
+		font-weight: 500px; 
 		text-transform: uppercase;
 		&::after{
 			content: '•';
