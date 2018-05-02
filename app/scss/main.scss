@@ -6,6 +6,7 @@
 @import "sections/_about";
 @import "sections/_recalls";
 @import "sections/_comand.scss";
+@import "sections/_menu.scss";
 
 body,html{
 	height: 100%;
@@ -33,6 +34,13 @@ body,html{
 		color: rgb(249, 180, 59);
 		margin: 0;
 		text-align: left;
+		line-height: 0.75em;
+		margin-bottom: 46px;
+	}
+	&--menu{
+		color: white;
+		text-align: left;
+		margin:110px auto 0 95px;
 	}
 }
 
