@@ -23,9 +23,24 @@
 	&__item{
 		text-align: center;
 	}
-	&__ic img{
-		margin: 0 auto 35px;
-		color: #000;
+	&__ic{
+		margin-bottom: 35px;
+		text-align: center;
+		.icon-meat{
+			fill:#e25028;
+			width: 6.063rem;
+			height: 5.563rem;
+		}
+		.icon-hand{
+			width: 4.563rem;
+			height: 5.313rem;
+			fill:#f8b43a;
+		}
+		.icon-natural{
+			width: 5.5rem;
+			height: 4.688rem;
+			fill:#8ac03e;
+		}
 	}
 	&__subtitle{
 		color: #2f3234;
