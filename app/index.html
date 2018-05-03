@@ -270,7 +270,7 @@
               </div>
             </div>   
             <section class="order">
-              <h2 class="section-title">Закажите доставку</h2>
+              <h2 class="section-title section-title--form">Закажите доставку</h2>
               <div class="container">
                 <form action="/" class="order-form" id="order-form">
                   <div class="order-form__left">
@@ -303,7 +303,32 @@
                       <input class="form-group__input" type="text" name="stage" id="stage">
                     </div>
                   </div>
-                  <div class="order-form__right"></div>
+                  <div class="order-form__right">
+                    <div class="form-group">
+                      <label for="text" class="form-group-title">Комментарий</label>  
+                      <textarea class="form-group__text" name="text" id="text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="radio" name="cash" id="cash" class="radio">
+                      <label for="cash" class="form-group-title form-group-title--radio">
+                        Потребуется сдача
+                      </label>
+                      <input type="radio" name="cash" id="card" class="radio">
+                      <label for="card" class="form-group-title form-group-title--radio">
+                        Оплата по карте
+                      </label>                      
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" name="recall" id="recall" class="checkbox">
+                      <label for="recall" class="form-group-title form-group-title--checkbox">
+                          Оплата по карте
+                        </label>
+                    </div>
+                  </div>
+                  <div class="action-group">
+                      <button type="submit" class="nav__action nav__action--form">Заказать</button>
+                      <button type="reset" class="reset">Очистить</button>
+                  </div>
                 </form>
               </div>
             </section>
