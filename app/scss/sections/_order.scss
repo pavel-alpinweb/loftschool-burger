@@ -1,0 +1,59 @@
+.order{
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:#000 url(../img/order-bg.jpg) no-repeat center;
+    background-size: cover;
+    &>.container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.order-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.order-form__left, .order-form__right{
+    width: 50%;
+    min-height: 200px;
+    background-color: #ccc;
+}
+
+.order-form__left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order-form__left{
+    margin-right: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group--half{
+    max-width: 221px;
+}
+
+.form-group--quorte{
+    max-width: 100px;
+}
+
+.form-group-title{
+    display: block;
+    line-height: 0.75em;
+    margin-bottom: 10px;
+}
+
+.form-group__input{
+    width: 100%;
+    height: 2.25rem;
+    border: 0.063rem solid rgb(209, 207, 203);
+    border-radius: 5px;
+}
