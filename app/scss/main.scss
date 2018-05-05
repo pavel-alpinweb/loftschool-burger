@@ -5,9 +5,10 @@
 @import "elements/_sprite";
 @import "sections/_about";
 @import "sections/_recalls";
-@import "sections/_comand.scss";
-@import "sections/_menu.scss";
-@import "sections/_order.scss";
+@import "sections/_comand";
+@import "sections/_menu";
+@import "sections/_order";
+@import "sections/_page-footer";
 
 body,html{
 	height: 100%;
