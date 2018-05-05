@@ -1,3 +1,5 @@
 @function rem($px){
     @return $px / 16px+0rem;
 }
+
+@import "../libs/singularity/stylesheets/_singularitygs.scss"
