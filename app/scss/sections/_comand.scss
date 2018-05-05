@@ -13,10 +13,21 @@
     background-color: rgba(47, 50, 52,0.93);
     padding-left: 100px;
     padding-top: 113px;
+    @media only screen and (max-width : 992px) {
+        width: 100%;
+        padding-left: 0;
+    }
 }
 
 .worker{
     margin-bottom: 40px;
+    @media only screen and (max-width : 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     &.worker--active{
         .worker__name{
             color: rgb(249, 180, 59); 
@@ -55,6 +66,10 @@
     align-items: center;
     overflow: hidden;
     max-height: 0;
+    @media only screen and (max-width : 992px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .worker__desc{
@@ -63,6 +78,10 @@
     font-family: $mainFont;
     font-size: 0.875rem;
     margin-left: 20px;
+    @media only screen and (max-width : 992px) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
     h4{
         line-height: 0.75em;
         margin: 0 0 20px;

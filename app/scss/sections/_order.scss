@@ -20,6 +20,11 @@
 .order-form__left, .order-form__right{
     width: 48%;
     min-height: 200px;
+    @media only screen and (max-width : 992px) {
+        width: 100%;
+        max-width: 29.5rem;
+        margin: 0 auto;
+    }
 }
 
 .order-form__left{
@@ -30,6 +35,9 @@
 
 .order-form__left{
     margin-right: 20px;
+    @media only screen and (max-width : 992px) {
+        margin-right: auto;
+    }
 }
 
 .form-group{
@@ -130,4 +138,8 @@
 
 .action-group{
     width: 100%;
+    @media only screen and (max-width : 992px) {
+        max-width: 29.5rem;
+        margin: 0 auto;
+    }
 }

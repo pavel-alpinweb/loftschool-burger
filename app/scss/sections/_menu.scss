@@ -4,6 +4,10 @@
     display: flex;
     height: 100vh;
     min-height: 650px;
+    position: relative;
+    @media only screen and (max-width : 992px) {
+        justify-content: flex-end;
+    }
 }
 
 .menu__content{
@@ -36,6 +40,9 @@
   .menu__description{
       width: 50vw;
       padding: 65px 35px;
+      @media only screen and (max-width : 992px) {
+        width: 69vw;
+    }
   }  
   .menu__name{
       color: rgb(249, 180, 59);

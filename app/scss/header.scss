@@ -34,6 +34,13 @@
 		margin: auto;
 		justify-content:center;
 		align-items:center;
+		@media only screen and (max-width : 992px) {
+			flex-direction: column;
+			text-align: center;
+			img{
+				max-width: 80%;
+			}
+		}
 	}
 	&__titleGoup{
 		margin-left: 10px;
@@ -48,6 +55,9 @@
 		margin-top: 90px;
 		text-transform: uppercase;
 		display: block;
+		@media only screen and (max-width : 992px) {
+			margin-top: 15px;
+		}
 	}
 	&__subtitle{
 		color: #ffffff;
@@ -63,6 +73,9 @@
 .nav{
 	display: flex; 
 	align-items:center; 
+	@media only screen and (max-width : 992px) {
+		display: none;
+	}
 	&__menu{
 		display: flex;
 		align-items:center; 
@@ -113,6 +126,9 @@
 			margin-left: 0;
 			margin-right: 20px;
 			margin-left: 52%;
+			@media only screen and (max-width : 992px) {
+				margin-left: 0;
+			}
 		}
 	}
 }
