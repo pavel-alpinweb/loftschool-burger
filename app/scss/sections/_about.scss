@@ -9,6 +9,9 @@
 	.container{
 		display: flex;
 		justify-content:space-between;
+		@media only screen and (max-width : 768px) {
+			flex-direction: column;
+		}
 	}
 	&__text{
 		max-width: 286px;
@@ -19,13 +22,23 @@
 		font-weight: 300;
 		line-height: 24.07px;
 		text-align: center;
+		@media only screen and (max-width : 768px) {
+			text-align: left;
+		}
 	}
 	&__item{
 		text-align: center;
+		@media only screen and (max-width : 768px) {
+			display: flex;
+			width: 100%;
+		}
 	}
 	&__ic{
 		margin-bottom: 35px;
 		text-align: center;
+		@media only screen and (max-width : 768px) {
+			width: 130px;
+		}
 		.icon-meat{
 			fill:#e25028;
 			width: 6.063rem;
@@ -51,5 +64,8 @@
 		letter-spacing: -0.6px;
 		text-align: center;
 		line-height: 28.14px;
+		@media only screen and (max-width : 768px) {
+			text-align: left;
+		}
 	}
 }
