@@ -10,7 +10,12 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 	sprite       = require('gulp.spritesmith'), //генерация спрайтов
-	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+	autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
+/*Подключаем библиотеки для создание svg спрайтов*/
+	svgSprite = require('gulp-svg-sprite'),
+	svgmin = require('gulp-svgmin'),
+	cheerio = require('gulp-cheerio'),
+	replace = require('gulp-replace');
 
 gulp.task('sass', function(){
 	return gulp.src('app/scss/**/*.scss')
@@ -80,6 +85,42 @@ gulp.task('sprite', function() {
 
     spriteData.img.pipe(gulp.dest('app/img')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest('app/css')); // путь, куда сохраняем стили
+});
+
+gulp.task('svgSprite', function () {
+	return gulp.src('app/img/icons/*.svg')
+	// minify svg
+		.pipe(svgmin({
+			js2svg: {
+				pretty: true
+			}
+		}))
+		// remove all fill, style and stroke declarations in out shapes
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: {xmlMode: true}
+		}))
+		// cheerio plugin create unnecessary string '&gt;', so replace it.
+		.pipe(replace('&gt;', '>'))
+		// build svg sprite
+		.pipe(svgSprite({
+			mode: {
+				symbol: {
+					sprite:"img/sprite.svg",
+					render: {
+						scss: {
+							dest:'scss/_sprite.scss',
+							template: "app/scss/setings/_sprite_template.scss"
+						}
+					}
+				}
+			}
+		}))
+		.pipe(gulp.dest('app'));
 });
 
 

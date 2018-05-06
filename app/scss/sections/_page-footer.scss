@@ -1,0 +1,91 @@
+.map{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.page-footer{
+    position: relative;
+    @media only screen and (max-width : 480px) {
+        padding-bottom: 120px;
+    }
+}
+
+.page-footer__bottom{
+    background: url(../img/footer-texture.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50%;
+    &>.container{
+        display: flex;
+        min-height:3.625rem;
+        align-items: center;
+        justify-content: space-between;
+        @media only screen and (max-width : 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.page-footer__contacts{
+    line-height: 1.5rem;
+    @media only screen and (max-width : 768px) {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.foot-address{
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.tel-link{
+    color: rgb(228, 80, 40);
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.social-bar{
+    display: flex;
+    .icon{
+        fill: #fff;
+        opacity: 0.3;
+        &:hover{
+            opacity: 1;
+        }
+        &-vk{
+            width: 1.438rem;
+            height: 0.813rem;
+        }
+        &-fb{
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+        &-inst{
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+        &-twitter{
+            width: 1.25rem;
+            height: 1rem;
+        }
+    }
+}
+
+.social-item{
+    list-style: none;
+    margin-left: 20px;
+    &:first-of-type{
+        margin-left: 0px;
+    }
+}

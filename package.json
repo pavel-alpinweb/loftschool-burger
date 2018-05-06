@@ -22,7 +22,8 @@
     "gulp-spritesmith": "^0.0.2",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.1.0",
-    "node-bourbon": "^4.2.8"
+    "node-bourbon": "^4.2.8",
+    "singularitygs": "^1.8.0"
   },
   "dependencies": {
     "gulp": "^3.9.1",

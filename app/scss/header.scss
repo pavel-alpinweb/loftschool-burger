@@ -1,7 +1,12 @@
+<<<<<<< HEAD:app/scss/sections/header.scss
 @import "../setings/_mixins";
 @import "../setings/_fonts";
 @import "../setings/_vars";
 @import "../setings/_base";
+=======
+@import "setings/_vars";
+@import "setings/_base";
+>>>>>>> refs/remotes/origin/develope:app/scss/header.scss
 .page-header{
 	display: block;
 	height: 100vh;
@@ -36,6 +41,16 @@
 		margin: auto;
 		justify-content:center;
 		align-items:center;
+		@media only screen and (max-width : 992px) {
+			flex-direction: column;
+			text-align: center;
+			img{
+				max-width: 80%;
+			}
+		}
+		@media only screen and (max-width : 480px) {
+			width: 100%;
+		}
 	}
 	&__titleGoup{
 		margin-left: 10px;
@@ -50,6 +65,12 @@
 		margin-top: 90px;
 		text-transform: uppercase;
 		display: block;
+		@media only screen and (max-width : 992px) {
+			margin-top: 15px;
+		}
+		@media only screen and (max-width : 480px) {
+			font-size: 36px;
+		}
 	}
 	&__subtitle{
 		color: #ffffff;
@@ -59,12 +80,19 @@
 		letter-spacing: -1.63px;
 		line-height: 60px;
 		margin: 0;
+		@media only screen and (max-width : 480px) {
+			font-size: 24px;
+			line-height: 1em;
+		}
 	}
 }
 
 .nav{
-	display: flex;
+	display: flex; 
 	align-items:center; 
+	@media only screen and (max-width : 992px) {
+		display: none;
+	}
 	&__menu{
 		display: flex;
 		align-items:center; 
@@ -72,7 +100,7 @@
 	&__item{
 		list-style: none;
 		font-size: 13px;
-		font-weight: 500px;
+		font-weight: 500px; 
 		text-transform: uppercase;
 		&::after{
 			content: '•';
@@ -87,10 +115,11 @@
 			display: none;
 		}
 		a{
-			text-decoration: none;
 			color: #ffffff;
+			transition: color .2s;
+			text-decoration: none;
 			&:hover{
-				text-decoration: underline;
+				color: #e45028;
 			}
 		}
 	}
@@ -109,6 +138,14 @@
 		margin-left: 15px;
 		&:hover{
 			background-color: #c1401e;
+		}
+		&--form{
+			margin-left: 0;
+			margin-right: 20px;
+			margin-left: 52%;
+			@media only screen and (max-width : 992px) {
+				margin-left: 0;
+			}
 		}
 	}
 }

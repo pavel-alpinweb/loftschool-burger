@@ -1,0 +1,99 @@
+.menu{
+    background: #000 url('../img/menu.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+    @media only screen and (max-width : 992px) {
+        justify-content: flex-end;
+    }
+    @media only screen and (max-width : 480px) {
+        min-height: 300px;
+        height: 300px;
+    }
+}
+
+.menu__content{
+    display: flex;
+    height: 100%;
+}
+
+.menu__description{
+    width: 0px;
+    overflow: hidden;
+    background-color: rgba(47, 50, 52, .93);
+    color: #fff;
+    p{
+        color: rgb(255, 255, 255);
+        font-family: $mainFont;
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+        margin: 0;
+    }
+}
+
+.menu__item{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.menu__item--active{
+  .menu__description{
+      width: 50vw;
+      padding: 65px 35px;
+      @media only screen and (max-width : 992px) {
+        width: 69vw;
+    }
+    @media only screen and (max-width : 768px) {
+        width: 50vw;
+    }
+    @media only screen and (max-width : 480px) {
+        padding: 10px;
+        overflow: auto;
+    }
+  }  
+  .menu__name{
+      color: rgb(249, 180, 59);
+  }
+}
+
+.vertical-positioner{
+    position: relative;
+    max-width: 80px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    @media only screen and (max-width : 480px) {
+        max-width: 53px;
+    }
+}
+
+@each $kind-menu in 1, 2, 3{
+    .vertical-positioner--#{$kind-menu}{
+        background: #000 url('../img/menu-bg-#{$kind-menu}.jpg') no-repeat center;
+        background-size: cover;
+    }
+}
+
+.menu__name{
+    color: rgb(255, 255, 255);
+    font-family: $mainTitleFont;
+    font-size: 2.5rem;
+    font-weight: 400;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    margin: 0;
+    line-height: 0;
+    width: 100%;
+    margin-bottom: 80px;
+    cursor: pointer;
+    @media only screen and (max-width : 480px) {
+        font-size: 1rem;
+    }
+}
