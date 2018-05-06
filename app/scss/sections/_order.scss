@@ -10,6 +10,9 @@
         display: flex;
         justify-content: space-between;
     }
+    @media only screen and (max-width : 480px) {
+        height: auto;
+    }
 }
 .order-form{
     width: 100%;
@@ -40,10 +43,7 @@
     }
 }
 
-.form-group{
-    width: 100%;
-    margin-bottom: 20px;
-}
+
 
 .form-group--half{
     max-width: 221px;
@@ -51,6 +51,14 @@
 
 .form-group--quorte{
     max-width: 100px;
+}
+
+.form-group{
+    width: 100%;
+    margin-bottom: 20px;
+    @media only screen and (max-width : 480px) {
+        max-width: 100%;
+    }
 }
 
 .form-group-title{
@@ -141,5 +149,8 @@
     @media only screen and (max-width : 992px) {
         max-width: 29.5rem;
         margin: 0 auto;
+    }
+    @media only screen and (max-width : 480px) {
+        padding-bottom: 20px;
     }
 }

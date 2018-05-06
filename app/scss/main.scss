@@ -59,6 +59,9 @@ body,html{
 		color: rgb(249, 180, 59);
 		margin-bottom: 45px;
 	}
+	@media only screen and (max-width : 480px) {
+		font-size: 36px;
+	}
 }
 
 .live-scroll{
@@ -91,5 +94,8 @@ body,html{
 			line-height: 0;
 			transform: translate(-50%, -50%);
 		}
+	}
+	@media only screen and (max-width : 480px) {
+		display: none;
 	}
 }
