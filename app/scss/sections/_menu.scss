@@ -49,6 +49,7 @@
     }
     @media only screen and (max-width : 768px) {
         width: 50vw;
+        overflow: auto;
     }
     @media only screen and (max-width : 480px) {
         padding: 10px;
@@ -62,7 +63,7 @@
 
 .vertical-positioner{
     position: relative;
-    max-width: 80px;
+    max-width: 75px;
     overflow: hidden;
     height: 100%;
     display: flex;
