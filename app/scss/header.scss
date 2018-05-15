@@ -83,8 +83,9 @@
 .nav{
 	display: flex; 
 	align-items:center; 
+	position: relative;
 	@media only screen and (max-width : 992px) {
-		// display: none;
+		display: none;
 		position: fixed;
 		top:0;
 		right: 0;
@@ -94,6 +95,22 @@
 		background-color: rgb(47, 50, 52);
 		opacity: 0.99;
 		z-index: 9999;
+	}
+	.close-menu{
+		@media only screen and (min-width : 993px) {
+			display: none;
+		}
+		position: absolute;
+		top:30px;
+		right: 30px;
+	}
+	.menu-logo{
+		position: absolute;
+		top:12px;
+		left: 24px;
+		@media only screen and (min-width : 993px) {
+			display: none;
+		}
 	}
 	&__menu{
 		display: flex;
