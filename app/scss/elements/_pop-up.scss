@@ -1,0 +1,27 @@
+.recall-window{
+    max-width: 463px;
+    padding: 30px 20px;
+    border-radius:5px;
+}
+
+.recall-window__name{
+    color: #2f3234;
+    font-family: $mainTitleFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0.75em;
+    margin-bottom: 30px;
+}
+
+.recall-window__text{
+    color: #2f3234;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    p{margin: 0;}
+}
+
+.fancybox-close-small svg{
+    color: #e45028;
+}

@@ -24,6 +24,7 @@
     overflow: hidden;
     background-color: rgba(47, 50, 52, .93);
     color: #fff;
+    transition:width .2s;
     p{
         color: rgb(255, 255, 255);
         font-family: $mainFont;
@@ -38,6 +39,11 @@
     position: relative;
     height: 100%;
     display: flex;
+    &:hover{
+        .menu__name{
+            color: rgb(249, 180, 59);
+        } 
+    }
 }
 
 .menu__item--active{

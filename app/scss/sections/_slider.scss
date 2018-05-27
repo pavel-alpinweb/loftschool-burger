@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     @media only screen and (max-width : 768px) {
         height: auto;
         padding: 100px 45px;
@@ -20,27 +21,7 @@
     justify-content: space-between;
 }
 
-.slider__prev,.slider__next{
-    display: flex;
-    align-items: center;
-    color: #fff;
-    cursor: pointer;
-    .icon{
-        width: 27px;
-        height:13px;
-    }
-}
 
-.slider__prev{
-    .icon{
-        transform: rotate(90deg);
-    }
-}
-.slider__next{
-    .icon{
-        transform: rotate(-90deg);
-    }
-}
 
 .slider__container{
     display: flex;
@@ -149,6 +130,74 @@
     }
 }
 
+.composition{
+    width: 273px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    padding: 20px;
+    border-radius:5px;
+    position: absolute;
+    top:0;
+    left: 90px;
+    display: none;
+}
+
+.composition__item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    .icon-beef{
+        width: 44px;
+        height: 39px;   
+        color: #e35028;
+    }
+    .icon-buns{
+        color: $mainColor;
+        width: 48px;
+        height: 30px;
+    }
+    .icon-salad{
+        width: 38px;
+        height: 38px;
+        color: #8ac03e;
+    }
+    .icon-sauce{
+        width: 41px;
+        height: 43px;
+        color: #e35028;
+    }
+    .icon-cucumber{
+        width: 43px;
+        height: 37px;
+        color: #8ac03e;
+    }
+    .icon-cheese{
+        color: $mainColor;
+        width: 39px;
+        height: 34px;
+    }
+}
+
+.compositio__name{
+    color: #2f3234;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.composition__count{
+    margin-left: auto;
+    color: #2f3234;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
 .energy-val{
     color: rgb(255, 255, 255);
     position: relative;
@@ -194,4 +243,26 @@
 
 .energy{
     display: inline-block;
+}
+
+.slick-prev,.slick-next{
+    align-items: center;
+    color: #fff;
+    text-indent: -9000px;
+    background-color: transparent;
+    width: 208px;
+    height: 18px;
+    padding: 0;
+    cursor: pointer;
+    background-image: url('../img/arrow-scroll.svg');
+    background-repeat: no-repeat;
+}
+
+.slick-prev{
+        transform: rotate(90deg);
+        margin-left: 60px;
+}
+.slick-next{
+        transform: rotate(-90deg);
+        margin-right: 60px;
 }

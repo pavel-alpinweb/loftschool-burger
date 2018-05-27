@@ -5,60 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Site Name</title>
+    <title>Лендинг Бургеров, учебный проект loftchool</title>
   </head>
   <body>
     
   <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
   <style></style>
     
+
+    <!-- end header -->
+      <div class="maincontent">
+
+
     <!-- header -->
-    <div class="page-header">
-      <div class="container">
-        <div class="page-header__top">
-          <div class="container">
-            <div class="page-header__logo">
-              <img src="img/icons\logo.svg" width="92" height="69">
-            </div>
-            <nav class="nav">
-              <div class="close-menu">
-                  <img src="img/close.png" alt="close">
+    <div class="page-header  section fp-auto-height">
+        <div class="container">
+          <div class="page-header__top">
+            <div class="container">
+              <div class="page-header__logo">
+                <img src="img/icons\logo.svg" width="92" height="69">
               </div>
-              <img class="menu-logo" src="img/icons\logo.svg" width="92" height="69">
-              <ul class="nav__menu">
-                <li class="nav__item"><a href="#">о нас</a></li>
-                <li class="nav__item"><a href="#">бургеры</a></li>
-                <li class="nav__item"><a href="#">команда</a></li>
-                <li class="nav__item"><a href="#">меню</a></li>
-                <li class="nav__item"><a href="#">отзывы</a></li>
-                <li class="nav__item"><a href="#">контакты</a></li>
-              </ul>
-            </nav>    
-            <a href="#" class="nav__action">Заказать</a> 
-            <div class="btn_mnu">
-              <div class="btn_row"></div>
-              <div class="btn_row"></div>
-              <div class="btn_row"></div>
-            </div>       
+              <nav class="nav">
+                <div class="close-menu">
+                    <img src="img/close.png" alt="close">
+                </div>
+                <img class="menu-logo" src="img/icons\logo.svg" width="92" height="69">
+                <ul class="nav__menu">
+                  <li class="nav__item"><a href="#about">о нас</a></li>
+                  <li class="nav__item"><a href="#slider">бургеры</a></li>
+                  <li class="nav__item"><a href="#comand">команда</a></li>
+                  <li class="nav__item"><a href="#menu">меню</a></li>
+                  <li class="nav__item"><a href="#recalls">отзывы</a></li>
+                  <li class="nav__item"><a href="#footer">контакты</a></li>
+                </ul>
+              </nav>    
+              <a href="#order" class="nav__action">Заказать</a> 
+              <div class="btn_mnu">
+                <div class="btn_row"></div>
+                <div class="btn_row"></div>
+                <div class="btn_row"></div>
+              </div>       
+            </div>
+  
           </div>
-
+          <div class="page-header__baner">
+            <img src="img/buner-burger.png" width="417" height="424">
+            <div class="page-header__titleGoup">
+              <span class="page-header__title">Мы делаем</span>
+              <h1 class="page-header__subtitle">натуральные <br>бургеры</h1>           
+            </div>
+  
+          </div>        
         </div>
-        <div class="page-header__baner">
-          <img src="img/buner-burger.png" width="417" height="424">
-          <div class="page-header__titleGoup">
-            <span class="page-header__title">Мы делаем</span>
-            <h1 class="page-header__subtitle">натуральные <br>бургеры</h1>           
-          </div>
-
-        </div>        
+  
+        <a class="scroll-down" href="#about"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="28.685px" height="14.479px" viewBox="0 0 28.685 14.479" enable-background="new 0 0 28.685 14.479" xml:space="preserve">
+       <g>
+         <g>
+           <path  d="M14.332,14.479c-1.279,0-2.554-0.486-3.525-1.458L0.268,1.681c-0.376-0.404-0.353-1.037,0.052-1.413
+             c0.403-0.374,1.036-0.354,1.413,0.052l10.514,11.314c1.145,1.143,3.049,1.142,4.218-0.026L26.952,0.319
+             c0.378-0.405,1.011-0.426,1.413-0.052c0.404,0.376,0.428,1.009,0.052,1.413L17.903,12.995
+             C16.913,13.986,15.62,14.479,14.332,14.479z"/>
+         </g>
+       </g>
+       </svg>
+      </a>
       </div>
 
-      <div class="scroll-down"><img src="img/icons\arrow-scroll.svg" alt="scroll-down"></div>
-    </div>
-    <!-- end header -->
-    <div class="wrapper">
-      <div class="maincontent">
-        <div class="about">
+        <div class="about section" id="about">
           <h2 class="section-title">Мы лучшие</h2>
           <div class="container">
             <div class="about__item">
@@ -105,13 +119,8 @@
             </div>
           </div>
         </div>
-        <div class="slider">
+        <div class="slider section fp-auto-height" id="slider">
           <div class="slider__item">
-            <div class="slider__prev">
-                <svg class="icon icon-arrow-scroll">
-                    <use xlink:href="img/sprite.svg#arrow-scroll"></use>
-                </svg>
-            </div>
             <div class="container slider__container">
               <div class="slider__image">
                 <a href="/" class="info-trigger">
@@ -120,6 +129,50 @@
                     </svg>
                   Состав
                 </a>
+                <div class="composition">
+                  <div class="composition__item">
+                      <svg class="icon icon-beef">
+                          <use xlink:href="img/sprite.svg#beef"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-buns">
+                          <use xlink:href="img/sprite.svg#buns"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-salad">
+                          <use xlink:href="img/sprite.svg#salad"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-sauce">
+                          <use xlink:href="img/sprite.svg#sauce"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-cucumber">
+                          <use xlink:href="img/sprite.svg#cucumber"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-cheese">
+                          <use xlink:href="img/sprite.svg#cheese"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                </div>
                 <img src="img/burger-1.png" alt="burger-1">
                 <div class="energy">
                   <div class="energy-val">
@@ -144,14 +197,167 @@
                 </div>
               </div>
             </div>
-            <div class="slider__next">
-                <svg class="icon icon-arrow-scroll">
-                    <use xlink:href="img/sprite.svg#arrow-scroll"></use>
-                </svg>
+          </div>
+          <div class="slider__item">
+            <div class="container slider__container">
+              <div class="slider__image">
+                <a href="/" class="info-trigger">
+                  <svg class="icon icon-burger">
+                      <use xlink:href="img/sprite.svg#burger"></use>
+                    </svg>
+                  Состав
+                </a>
+                <div class="composition">
+                  <div class="composition__item">
+                      <svg class="icon icon-beef">
+                          <use xlink:href="img/sprite.svg#beef"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-buns">
+                          <use xlink:href="img/sprite.svg#buns"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-salad">
+                          <use xlink:href="img/sprite.svg#salad"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-sauce">
+                          <use xlink:href="img/sprite.svg#sauce"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-cucumber">
+                          <use xlink:href="img/sprite.svg#cucumber"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-cheese">
+                          <use xlink:href="img/sprite.svg#cheese"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                </div>
+                <img src="img/burger-1.png" alt="burger-1">
+                <div class="energy">
+                  <div class="energy-val">
+                      <svg class="icon icon-kkal">
+                        <use xlink:href="img/sprite.svg#kkal"></use>
+                      </svg>
+                      <span class="kkal-val">1200</span>
+                  </div>
+                  <div class="energy-unit">ккал</div>
+                </div>
+              </div>
+              <div class="slider__description">
+                <h2 class="product-name">Dark BEEF <br>Burger</h2>
+                <p class="product-description">
+                  Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                </p>
+                <div class="action-box">
+                  <div class="price">
+                    <span>500</span>  рублей
+                  </div>
+                  <a href="#" class="nav__action nav__action--slider">Заказать</a>                   
+                </div>
+              </div>
+            </div>
+      
+          </div>
+          <div class="slider__item">
+            
+            <div class="container slider__container">
+              <div class="slider__image">
+                <a href="/" class="info-trigger">
+                  <svg class="icon icon-burger">
+                      <use xlink:href="img/sprite.svg#burger"></use>
+                    </svg>
+                  Состав
+                </a>
+                <div class="composition">
+                  <div class="composition__item">
+                      <svg class="icon icon-beef">
+                          <use xlink:href="img/sprite.svg#beef"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-buns">
+                          <use xlink:href="img/sprite.svg#buns"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-salad">
+                          <use xlink:href="img/sprite.svg#salad"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-sauce">
+                          <use xlink:href="img/sprite.svg#sauce"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-cucumber">
+                          <use xlink:href="img/sprite.svg#cucumber"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                  <div class="composition__item">
+                      <svg class="icon icon-cheese">
+                          <use xlink:href="img/sprite.svg#cheese"></use>
+                        </svg>
+                        <div class="compositio__name">Булочки</div>
+                        <div class="composition__count">300 г</div>
+                  </div>
+                </div>
+                <img src="img/burger-1.png" alt="burger-1">
+                <div class="energy">
+                  <div class="energy-val">
+                      <svg class="icon icon-kkal">
+                        <use xlink:href="img/sprite.svg#kkal"></use>
+                      </svg>
+                      <span class="kkal-val">1200</span>
+                  </div>
+                  <div class="energy-unit">ккал</div>
+                </div>
+              </div>
+              <div class="slider__description">
+                <h2 class="product-name">Dark BEEF <br>Burger</h2>
+                <p class="product-description">
+                  Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                </p>
+                <div class="action-box">
+                  <div class="price">
+                    <span>500</span>  рублей
+                  </div>
+                  <a href="#" class="nav__action nav__action--slider">Заказать</a>                   
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <section class="comand">
+        <section class="comand section fp-auto-height" id="comand">
             <div class="comand__content">
               <h2 class="section-title section-title--comand">команда</h2>
               <div class="worker">
@@ -228,7 +434,7 @@
             </div>
         </section> 
 
-        <section class="menu">
+        <section class="menu section fp-auto-height" id="menu">
             <h2 class="section-title section-title--menu">Меню</h2>
             <div class="menu__content">
               <div class="menu__item">
@@ -267,13 +473,13 @@
               </div>   
             </div>
           </section> 
-          <div class="recalls">
+          <div class="recalls section fp-auto-height" id="recalls">
               <div class="recalls__item">
                 <img src="img/photo1.jpg" alt="">
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
               <div class="recalls__item">
@@ -281,7 +487,7 @@
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
               <div class="recalls__item">
@@ -289,7 +495,7 @@
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
               <div class="recalls__item">
@@ -297,7 +503,7 @@
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
               <div class="recalls__item">
@@ -305,7 +511,7 @@
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
               <div class="recalls__item">
@@ -313,7 +519,7 @@
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
               <div class="recalls__item">
@@ -321,7 +527,7 @@
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
               <div class="recalls__item">
@@ -329,11 +535,11 @@
                 <div class="overlay">
                   <div class="overlay__title">Константин Спилберг</div>
                   <div class="overlay__content">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-                  <a href="#" class="overlay__link">Подробнее</a>
+                  <a data-fancybox data-src="#hidden-content" href="javascript:;" class="overlay__link">Подробнее</a>
                 </div>
               </div>
             </div>   
-            <section class="order">
+            <section class="order section fp-auto-height" id="order">
               <h2 class="section-title section-title--form">Закажите доставку</h2>
               <div class="container">
                 <form action="/" class="order-form" id="order-form">
@@ -385,7 +591,7 @@
                     <div class="form-group">
                       <input type="checkbox" name="recall" id="recall" class="checkbox">
                       <label for="recall" class="form-group-title form-group-title--checkbox">
-                          Оплата по карте
+                          Не перезванивать
                         </label>
                     </div>
                   </div>
@@ -396,9 +602,8 @@
                 </form>
               </div>
             </section>
-            <footer class="page-footer">
+            <footer class="page-footer section fp-auto-height" id="footer">
               <div class="map" id="map">
-                <img src="img/map.jpg" alt="map">
               </div>
               <div class="page-footer__bottom">
                 <div class="container">
@@ -431,19 +636,25 @@
                 </div>
               </div>
             </footer>
-      </div>  
-    </div>
+      </div>
 
     <ul class="live-scroll">
-      <li class="live-scroll__item active"></li>
-      <li class="live-scroll__item"></li>
-      <li class="live-scroll__item"></li>
-      <li class="live-scroll__item"></li>
-      <li class="live-scroll__item"></li>
-      <li class="live-scroll__item"></li>
-      <li class="live-scroll__item"></li>
-      <li class="live-scroll__item"></li>
+      <li class="live-scroll__item active" data-menuanchor="firstPage"><a href="#firstPage"><span></span></a></li>
+      <li class="live-scroll__item" data-menuanchor="secondPage"><a href="#secondPage"><span></span></a></li>
+      <li class="live-scroll__item" data-menuanchor="3rdPage"><a href="#3rdPage"><span></span></a></li>
+      <li class="live-scroll__item" data-menuanchor="4rdPage"><a href="#4rdPage"><span></span></a></li>
+      <li class="live-scroll__item" data-menuanchor="5rdPage"><a href="#5rdPage"><span></span></a></li>
+      <li class="live-scroll__item" data-menuanchor="6rdPage"><a href="#6rdPage"><span></span></a></li>
+      <li class="live-scroll__item" data-menuanchor="7rdPage"><a href="#7rdPage"><span></span></a></li>
+      <li class="live-scroll__item" data-menuanchor="8rdPage"><a href="#8rdPage"><span></span></a></li>
     </ul>
+
+    <div style="display: none;" id="hidden-content" class="recall-window">
+      <div class="recall-window__name">Константин Спилберг</div>  
+      <div class="recall-window__text">
+        <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+      </div>
+    </div>
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -460,11 +671,48 @@
 
     <!-- Load Scripts Start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>var scr = {"scripts":[
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- <script>var scr = {"scripts":[
       {"src" : "js/libs.min.js", "async" : true},
       {"src" : "js/common.js", "async" : true}
       ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-    </script>
+    </script> -->
     <!-- Load Scripts End -->
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2fxeWJf1c6rMv91hMYxF9s-zdO-ZmmzE&amp;amp;amp;sensor=false"></script>
+    <script type="text/javascript">
+      var locations = [
+          ["Название метки 1", 50.4094919,30.6038815, "img/map-marker.svg"],
+          ["Название метки 2", 50.427342,30.469137, "img/map-marker.svg"],
+          ["Название метки 2", 50.527330,30.469130, "img/map-marker.svg"],
+          ["Название метки 2", 42.8749982,74.5791558, "img/map-marker.svg"],
+      ];
+      var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: new google.maps.LatLng(50.427342,30.469137),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+       
+      var infowindow = new google.maps.InfoWindow();
+      var marker, i;
+       
+      for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+              position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+              map: map,
+              icon: {
+                  url: locations[i][3],
+                  scaledSize: new google.maps.Size(34, 38)
+              }
+          });
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+              return function() {
+                  infowindow.setContent(locations[i][0]);
+                  infowindow.open(map, marker);
+              }
+          })(marker, i));
+      }
+      </script>
   </body>
 </html>

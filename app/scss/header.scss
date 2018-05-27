@@ -103,6 +103,11 @@
 		position: absolute;
 		top:30px;
 		right: 30px;
+		cursor: pointer;
+		img{transition: all .4s;}
+		img:hover{
+			transform:rotate(360deg);
+		}
 	}
 	.menu-logo{
 		position: absolute;
@@ -190,4 +195,9 @@
 	left: 50%;
 	margin-left: -15px;
 	cursor: pointer;
+	color: #fff;
+	fill:#fff;
+	&:hover{
+		fill: $mainColor;
+	}
 }
