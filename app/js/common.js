@@ -51,5 +51,8 @@ $(document).ready(function(){
 		 anchors:['firstPage', 'secondPage','3rdPage','4rdPage','5rdPage','6rdPage','7rdPage','8rdPage']
      });
 
+     $('.menu__item .close').click(function(){
+         $(this).parents('.menu__item').removeClass('menu__item--active');
+     });
 });
 

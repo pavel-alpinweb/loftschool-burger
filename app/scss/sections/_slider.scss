@@ -8,11 +8,11 @@
     justify-content: center;
     overflow: hidden;
     @media only screen and (max-width : 768px) {
-        height: auto;
-        padding: 100px 45px;
+        height: auto!important;
+        padding: 100px 15px;
     }
     @media only screen and (max-width : 480px) {
-        padding: 70px 15px;
+        padding: 70px 5px;
     }
 }
 
@@ -103,6 +103,9 @@
     margin-left: 25px;
     position: relative;
     top: 9px;
+    @media only screen and (max-width : 1024px) {
+        top:0;
+    }
 }
 
 .info-trigger{
@@ -140,6 +143,11 @@
     top:0;
     left: 90px;
     display: none;
+    @media only screen and (max-width : 480px) {
+        top:90px;
+        left: 0;
+        width: 242px;
+    }
 }
 
 .composition__item{
@@ -261,8 +269,14 @@
 .slick-prev{
         transform: rotate(90deg);
         margin-left: 60px;
+        @media only screen and (max-width : 992px) {
+            margin-left: 0;
+        }
 }
 .slick-next{
         transform: rotate(-90deg);
         margin-right: 60px;
+        @media only screen and (max-width : 992px) {
+            margin-right: 0;
+        }
 }
